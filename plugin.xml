@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="navigationPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>navigationPlugin</name>
+<js-module name="navigationPlugin" src="www/navigationPlugin.js">
+<clobbers target="cordova.plugins.navigationPlugin" />
+</js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="navigationPlugin">
+<param name="android-package" value="navigationPlugin.navigationPlugin" />
+</feature>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+<config-file target="AndroidManifest.xml" parent="/manifest/application"
+        android:scheme="baidumap"
+        android:host="map">
+</config-file>
+<source-file src="src/android/navigationPlugin.java" target-dir="src/navigationPlugin/navigationPlugin" />
+</platform>
+</plugin>

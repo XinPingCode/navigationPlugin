@@ -1,0 +1,17 @@
+{
+  "name": "navigationPlugin",
+  "version": "0.0.28",
+  "cordova": {
+    "id": "navigationPlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "ChenXinPing (XinPingCode)",
+  "license": "ISC",
+  "description": ""
+}
