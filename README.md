@@ -8,6 +8,11 @@ cordova.plugins.navigationPlugin.baiDuMap(origin_latitude,origin_longitude,desti
 option：transit（meaning bus）,driving,walking,riding.default:driving
 
     
-cordova.plugins.navigationPlugin.gaoDeMap(origin_latitude,origin_longitude,destination_latitude,destination_longitude,"0",result =>{
+cordova.plugins.navigationPlugin.gaoDeMap(origin_latitude,origin_longitude,destination_latitude,destination_longitude,t,result =>{
       console.log("re:",result);
     },error =>console.log("err:",error));
+    
+t:t = 0（meaning driving）= 1（meaning bus）= 2（meaning walking）= 3（meaning riding）= 4（meaning train）= 5（meaning coach）
+      
+    
+    
