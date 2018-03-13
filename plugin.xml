@@ -10,7 +10,10 @@
 <param name="android-package" value="navigationPlugin.navigationPlugin" />
 </feature>
 </config-file>
-<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+<config-file parent="/*" target="AndroidManifest.xml">
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</config-file>
 <config-file target="AndroidManifest.xml" parent="/manifest/application"
         android:scheme="baidumap"
         android:host="map">
